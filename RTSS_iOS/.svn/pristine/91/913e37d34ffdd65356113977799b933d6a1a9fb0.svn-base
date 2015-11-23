@@ -1,0 +1,35 @@
+//
+//  RTSSPrefix.pch
+//  RTSS
+//
+//  Created by shengyp on 14/10/22.
+//  Copyright (c) 2014年 shengyp. All rights reserved.
+//
+
+#ifndef RTSS_RTSSPrefix_pch
+#define RTSS_RTSSPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+// 发布版本的时候 关闭NSLog
+#ifdef __DISTRIBUTION__
+    #define NSLog(...) {}
+#else
+    #define NSLog(...) NSLog(__VA_ARGS__)
+#endif
+
+// RTSS APP 的版本号    
+#define APPLICATION_VERSION_CODE        [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] intValue]
+
+#define APPLICATION_VERSION_TEXT        [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+// RTSS APP 发布流程宏(有逻辑判断，网络请求)
+#define APPLICATION_BUILDING_RELEASE
+
+#endif

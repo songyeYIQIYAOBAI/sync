@@ -1,0 +1,28 @@
+//
+//  NotificationDefine.h
+//  SJB
+//
+//  Created by sheng yinpeng on 13-8-21.
+//  Copyright (c) 2013年 sheng yinpeng. All rights reserved.
+//
+
+#ifndef SJB_NotificationDefine_h
+#define SJB_NotificationDefine_h
+
+#define NOTIFICATION_DEFAULT                            @"DEFAULT"
+#define NOTIFICATION_USER_PORTRAIT                      @"USER_PORTRAIT"
+#define NOTIFICATION_CHANGE_ACCOUNT                     @"CHANGE_ACCOUNT"
+#define NOTIFICATION_APP_CHANGE_LANGUAGE                @"APP_CHANGE_LANGUAGE"
+#define NOTIFICATION_BUDGET_GROUP_LIST                  @"BUDGET_GROUP_LIST"
+
+#define NOTIFICATION_TRANSACTION_CREATED                @"NOTIFICATION_TRANSACTION_CREATED"
+#define NOTIFICATION_TRANSACTION_JOINED                 @"NOTIFICATION_TRANSACTION_JOINED"
+#define NOTIFICATION_USER_JOINED                        @"NOTIFICATION_USER_JOINED"
+#define NOTIFICATION_MYSTATUS_UPDATED                   @"NOTIFICATION_MYSTATUS_UPDATED"
+#define NOTIFICATION_PEERSTATUS_UPDATED                 @"NOTIFICATION_PEERSTATUS_UPDATED"
+#define NOTIFICATION_USERSTATUS_UPDATED                 @"NOTIFICATION_USERSTATUS_UPDATED"
+#define NOTIFICATION_TRANSACTION_IDLE                   @"NOTIFICATION_TRANSACTION_IDLE"
+#define NOTIFICATION_SESSION_INVALID                    @"NOTIFICATION_SESSION_INVALID"
+#define NOTIFICATION_PEERINFO_READY                     @"NOTIFICATION_PEERINFO_READY"
+
+#endif
